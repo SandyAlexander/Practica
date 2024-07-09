@@ -1,0 +1,109 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".HomeFragment">
+
+    <!-- EditText para nombre -->
+    <EditText
+        android:id="@+id/etNombre"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nombre"
+        android:layout_margin="16dp"
+        android:inputType="text"
+        android:gravity="center" />
+
+    <!-- EditText para apellido -->
+    <EditText
+        android:id="@+id/etApellido"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Apellido"
+        android:layout_margin="16dp"
+        android:inputType="text"
+        android:gravity="center" />
+
+    <!-- RadioGroup para seleccionar el sexo -->
+    <RadioGroup
+        android:id="@+id/rgSexo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <RadioButton
+            android:id="@+id/rbMasculino"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Masculino" />
+
+        <RadioButton
+            android:id="@+id/rbFemenino"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Femenino" />
+    </RadioGroup>
+
+    <!-- CheckBoxGroup para seleccionar medios de transporte -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="16dp"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Medios de Transporte:" />
+
+        <CheckBox
+            android:id="@+id/cbMoto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Moto" />
+
+        <CheckBox
+            android:id="@+id/cbCarro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Carro" />
+
+        <CheckBox
+            android:id="@+id/cbTriciclo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Triciclo" />
+    </LinearLayout>
+
+    <!-- Spinner para rango de edad -->
+    <Spinner
+        android:id="@+id/spinnerEdad"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/cbTriciclo"
+        android:layout_margin="16dp" />
+
+    <!-- Botón para agregar usuario -->
+    <Button
+        android:id="@+id/btnAgregar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Agregar"
+        android:layout_margin="16dp"
+        android:layout_gravity="center" />
+
+    <!-- TextView para mostrar la lista de usuarios -->
+    <TextView
+        android:id="@+id/tvListaUsuarios"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:text="Lista de Usuarios:"
+        android:gravity="center" />
+
+</LinearLayout>

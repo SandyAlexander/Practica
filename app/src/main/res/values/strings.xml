@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">ggApplication</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string-array name="age_ranges">
+        <item>niño</item>
+        <item>joven</item>
+        <item>adulto</item>
+        <item>viejo</item>
+    </string-array>
+</resources>
